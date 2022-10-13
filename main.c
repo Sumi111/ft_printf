@@ -14,13 +14,13 @@
 
 int	main(void)
 {
-	int	n;
-	int	*c = &n;
+	int n;
+	int *c = &n;
 	int a;
 	int b;
 	n	= 172;
-	a = ft_printf("\n %   d %x %X %p %#X %X %% %i %s %c %+d %+d", -827, 172, 172, c, 172, 128, -74326, "hello", 'd', 452, -565);
-	b = printf("\n %   d %x %X %p %#X %X %% %i %s %c %+d %+d", -827, 172, 172, c, 172, 128, -74326, "hello", 'd', 452, -565);
+	a = ft_printf("\n %d %x %X %p %#X %X %% %i %s %c %+d %+d", -827, 172, 172, c, 172, 128, -74326, "hello", 'd', 452, -565);
+	b = printf("\n %d %x %X %p %#X %X %% %i %s %c %+d %+d", -827, 172, 172, c, 172, 128, -74326, "hello", 'd', 452, -565);
 	printf("%d %d", a, b);
 	return (0);
 }
