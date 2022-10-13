@@ -14,7 +14,7 @@ The prototype of ft_printf() is:
 * You must use the command ar to create your library. Using the libtool command is forbidden.
 * Your libftprintf.a has to be created at the root of your repository.
 
-You have to implement the following conversions:
+###### You have to implement the following conversions:
 * %c Prints a single character.
 * %s Prints a string (as defined by the common C convention).
 * %p The void * pointer argument has to be printed in hexadecimal format.
@@ -24,3 +24,6 @@ You have to implement the following conversions:
 * %x Prints a number in hexadecimal (base 16) lowercase format.
 * %X Prints a number in hexadecimal (base 16) uppercase format.
 * %% Prints a percent sign.
+
+## **Bonus part**
+*  Manage all the following flags: ’# +’ (Yes, one of them is a space) 
