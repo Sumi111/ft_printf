@@ -1,26 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: sfathima <sfathima@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/08 11:46:44 by sfathima          #+#    #+#             */
-/*   Updated: 2021/11/15 13:38:55 by sfathima         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "ft_printf.h"
 
-int	main(void)
+int main(void)
 {
-	int n;
-	int *c = &n;
-	int a;
-	int b;
-	n	= 172;
-	a = ft_printf("\n %d %x %X %p %#X %X %% %i %s %c %+d %+d", -827, 172, 172, c, 172, 128, -74326, "hello", 'd', 452, -565);
-	b = printf("\n %d %x %X %p %#X %X %% %i %s %c %+d %+d", -827, 172, 172, c, 172, 128, -74326, "hello", 'd', 452, -565);
-	printf("%d %d", a, b);
-	return (0);
+	int val = 42;
+	int *ptr = &val;
+	int my_printf = ft_printf("%d %s %c %p %u %x %X %% yay!! \n", 42, "Abu Dhabi", 'C', ptr, 52452, 42, 24);
+	int built_in_printf = printf("%d %s %c %p %u %x %X %% yay!! \n", 42, "Abu Dhabi", 'C', ptr, 52452, 42, 24);
+	printf("%d %d\n", my_printf, built_in_printf);
 }
